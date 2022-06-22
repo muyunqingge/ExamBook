@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.practice.PracticeFragment"
+    android:background="@color/colorAliceblue">
+
+    <TextView
+        android:id="@+id/tv_practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="考试宝典"
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        tools:ignore="MissingConstraints"
+        />
+    <Spinner
+        android:visibility="invisible"
+        android:id="@+id/sp_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_practice"
+        android:layout_marginRight="70dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pb_practice"
+        app:layout_constraintTop_toTopOf="@id/tv_practice"
+        android:spinnerMode="dialog"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_notice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/if_news"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="同步数据"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_red_tips"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:text="10"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:background="@drawable/shape_red_tips"
+        app:layout_constraintBottom_toTopOf="@+id/iv_notice"
+        app:layout_constraintStart_toEndOf="@+id/iv_notice"
+        app:layout_constraintEnd_toEndOf="@id/iv_notice"
+        app:layout_constraintTop_toTopOf="@id/iv_notice"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/pb_practice"
+        android:layout_width="170dp"
+        android:visibility="invisible"
+        android:layout_height="170dp"
+        android:max="100"
+        android:progress="100"
+        android:maxHeight="12dp"
+        android:minHeight="12dp"
+        tools:ignore="MissingConstraints"
+        android:progressDrawable="@drawable/layer_pb_practice"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_practice"
+        android:indeterminate="true"/>
+
+    <ProgressBar
+        android:id="@+id/pb_exam"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:visibility="invisible"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:maxHeight="12dp"
+        android:minHeight="12dp"
+        tools:ignore="MissingConstraints"
+        android:progressDrawable="@drawable/layer_pb_practice"
+        app:layout_constraintTop_toBottomOf="@id/tv_practice"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="顺序练习"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_btn_zhengque"
+        app:layout_constraintCircle="@id/pb_practice"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btn_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟考试"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_btn_cuowu"
+        app:layout_constraintCircle="@id/pb_exam"
+        tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_tubiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/pb_practice"
+            tools:ignore="MissingConstraints" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/iv_cailiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/if_cuotiben"
+                    tools:ignore="MissingConstraints" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:id="@+id/iv_shipin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/if_shipin_"
+                    tools:ignore="MissingConstraints"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:id="@+id/iv_cuotiben"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/if_cuotiben_"
+                    tools:ignore="MissingConstraints"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:id="@+id/iv_shoucangjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/if_shoucangjia"
+                    tools:ignore="MissingConstraints"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wenzi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_tubiao">
+
+            <TextView
+                android:id="@+id/tv_cailiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="教学材料"
+                android:textColor="@color/colorBlack"
+                />
+
+            <TextView
+                android:id="@+id/tv_shipin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="教学视频"/>
+
+            <TextView
+                android:id="@+id/tv_cuotiben"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="错题本"/>
+
+            <TextView
+                android:id="@+id/tv_shoucangjia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="收藏夹"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hengxian"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/colorBBlue"
+        app:layout_constraintTop_toBottomOf="@id/ll_wenzi"
+        android:layout_marginTop="5dp" />
+
+    <ListView
+        android:id="@+id/lv_community"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_hengxian"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible">
+    </ListView>
+</androidx.constraintlayout.widget.ConstraintLayout>

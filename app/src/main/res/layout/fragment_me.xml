@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.me.MeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_touixang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/touxiang"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toRightOf="@id/iv_touixang"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@id/iv_touixang"
+            android:layout_marginTop="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="齐齐哈尔大学"
+            android:layout_marginStart="20dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toRightOf="@id/tv_name"
+            app:layout_constraintTop_toTopOf="@id/tv_name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_tong_guo_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintBottom_toBottomOf="@id/iv_touixang"
+            android:layout_marginBottom="15dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorLightgrey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_favorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/if_shoucangjia"
+            android:background="@color/colortrans"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="我的收藏"/>
+
+        <Button
+            android:id="@+id/btn_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/if_cuotiben"
+            android:background="@color/colortrans"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="我的错题"/>
+
+        <Button
+            android:id="@+id/btn_shezhi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/if_shezhi"
+            android:background="@color/colortrans"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:text="我的设置"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

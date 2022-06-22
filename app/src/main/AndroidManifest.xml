@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.exambooktest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="百练通"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:authorities="com.exacom.example.exambooktest.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity
+            android:name=".UpdateHead"
+            android:exported="false" />
+        <activity android:name=".ExamSchoolReportActivity" />
+        <activity
+            android:name=".ExamTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionFavoritesTodayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionErrorToday"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatePhone"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateGender"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateNetName"
+            android:exported="false" />
+        <activity
+            android:name=".MyStuffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetSelectActivity"
+            android:exported="false" />
+        <activity android:name=".MockQuestionActivity" />
+        <activity android:name=".SequentialQuestionActivity" />
+        <activity android:name=".ExamQuestionActivity" />
+        <activity android:name=".MockSchoolReportActivity" />
+        <activity android:name=".MockTestActivity" />
+        <activity android:name=".TestPracticeActivity" />
+        <activity android:name=".ChapterPracticeActivity" />
+        <activity android:name=".ChapterActivity" />
+        <activity android:name=".SyncActivity" />
+        <activity android:name=".SequentialAnswerActivity" />
+        <activity android:name=".QuestionFavoritesActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".NoticeActivity" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".ErrorBookActivity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".TeachMaterialsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RetrieveActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:label="百练通">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

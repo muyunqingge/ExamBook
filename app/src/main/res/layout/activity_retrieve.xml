@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetrieveActivity"
+    android:orientation="vertical"
+    android:background="@drawable/shape_gradient_first">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="找回密码"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="请输入手机号"
+        android:textSize="20sp"
+        android:maxLength="20"
+        android:inputType="text"
+        android:padding="20dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="请输入验证码"
+            android:textSize="20sp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:padding="20dp"/>
+        <Button
+            android:id="@+id/btn_verification"
+            android:layout_width="60sp"
+            android:layout_height="25dp"
+            android:text="获取验证码"
+            android:textSize="10sp"
+            android:background="@drawable/btn_first_selector"
+            android:textColor="@color/colorLightblue"
+            android:visibility="visible"
+            android:layout_gravity="right|center"
+            android:layout_marginEnd="27dp"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="请输入新密码"
+        android:textSize="20sp"
+        android:maxLength="30"
+        android:inputType="text"
+        android:padding="20dp"/>
+    <EditText
+        android:id="@+id/et_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="请再次输入"
+        android:textSize="20sp"
+        android:maxLength="30"
+        android:inputType="textPassword"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_first_selector"
+        android:textSize="20sp"
+        android:layout_margin="50dp" />
+
+
+
+
+</LinearLayout>

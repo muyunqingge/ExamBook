@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChapterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/if_fanhui"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专项练习"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_zhang_jie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="章节练习"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:background="@drawable/btn_blue_normal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btn_kao_dian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="考点练习"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:background="@drawable/btn_green_normal"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/btn_xinzeng"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/if_xinzeng"
+            android:background="@color/colortrans"
+            android:text="新增题 10题"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_suiji"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/if_suiji"
+            android:background="@color/colortrans"
+            android:text="随机练习1000题"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_yicuo"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/if_yicuo"
+            android:background="@color/colortrans"
+            android:text="易错题100题"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/btn_zhengyi"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/if_zhengyi"
+            android:background="@color/colortrans"
+            android:text="争议题 10题"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_dadui"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/if_dadui"
+            android:background="@color/colortrans"
+            android:text="已做题 15题"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_weizuo"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/if_weizuo"
+            android:background="@color/colortrans"
+            android:text="未做题 100题"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorLightgrey"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="专项细分练习"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_danxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/if_1"
+            android:background="@color/colortrans"
+            android:text="单选题"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:id="@+id/tv_danxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_duoxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/if_2"
+            android:background="@color/colortrans"
+            android:text="多选题"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="100dp" />
+        <TextView
+            android:id="@+id/tv_duoxuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_panduan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/if_3"
+            android:background="@color/colortrans"
+            android:text="判断题"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:id="@+id/tv_panduan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_tiankong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/if_4"
+            android:background="@color/colortrans"
+            android:text="填空题"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="100dp" />
+        <TextView
+            android:id="@+id/tv_tiankong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_jisuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/if_5"
+            android:background="@color/colortrans"
+            android:text="计算题"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:id="@+id/tv_jisuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_zonghe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/if_6"
+            android:background="@color/colortrans"
+            android:text="综合题"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="100dp" />
+        <TextView
+            android:id="@+id/tv_zonghe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

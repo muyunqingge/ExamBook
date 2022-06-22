@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/if_fanhui"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成绩单"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_cheng_ji_dan"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:paddingRight="10dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_touixang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/touxiang"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toTopOf="@id/iv_touixang"
+            app:layout_constraintLeft_toRightOf="@id/iv_touixang"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_school_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="齐齐哈尔大学"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toLeftOf="@id/tv_id"
+            app:layout_constraintBottom_toBottomOf="@id/iv_touixang"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_score_max_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toTopOf="@id/tv_id"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史最高分"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toLeftOf="@id/tv_score_max_history"
+            app:layout_constraintTop_toTopOf="@id/tv_school_id"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科         目:      计算机组成原理"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"/>
+        <Spinner
+            android:id="@+id/sp_ke_mu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考试分数:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_score_this"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100分"
+            android:textColor="@color/colorRed"
+            android:layout_marginLeft="20dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_he_ge_ci_shu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_lei_ji_ci_shu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="合格次数"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="累计考试次数"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

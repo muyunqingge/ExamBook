@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exam.ExamFragment">
+
+    <TextView
+        android:id="@+id/tv_ke_mu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算机组成原理考试系统"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_cheng_ji_dan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成绩单"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toTopOf="@id/tv_ke_mu_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        tools:ignore="MissingConstraints"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ke_mu_title"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考试须知："
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1.遵守考场纪律，......"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="2.考场规则2，......"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="3.考场规则3，......"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="4.考场规则4，......"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="5.考场规则5，......"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_exam_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="19sp"
+        android:text="理论考试"
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_student_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@id/tv_exam_type"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="学         号:     123456789"/>
+
+    <TextView
+        android:id="@+id/tv_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@id/tv_student_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="考生姓名:     张三"/>
+
+    <TextView
+        android:id="@+id/tv_ke_mu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@id/tv_student_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="科         目:     "
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/sp_ke_mu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_ke_mu"
+        app:layout_constraintTop_toTopOf="@id/tv_ke_mu"/>
+
+    <Button
+        android:id="@+id/btn_start_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_blue_normal"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tv_ke_mu"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_exam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="点击“确认”按钮开始考试！"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/tv_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="理论考试：每题考试答案确定后，立即判定所选答案，如选择错误，系统将提示正确答案，提示后不允许修改答案。"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

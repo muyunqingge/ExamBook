@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExamBookTest</string>
+    <string name="title_practice">练习</string>
+    <string name="title_exam">考试</string>
+    <string name="title_friend">好友</string>
+    <string name="title_me">我的</string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/iv_fanhui"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/if_fanhui"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="30dp"
+        android:layout_height="0dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟练习"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_cheng_ji_dan"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="成绩单"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:paddingRight="10dp"/>
+
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_touixang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/touxiang"/>
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="张三"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/tv_tong_guo_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="0%"
+        android:textColor="@color/colorRed"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="预测考试通过率"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_ke_mu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="考试名称:     计算机组成原理"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_biao_zhun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="考试标准:     30分钟， 30题"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_he_ge_biao_zhun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="合格标准:     60分及格（满分100分）"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_he_ge_biao_zhun_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="出题标准:     根据学习规定出题规则组卷"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_ji_fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分数标准:     选择题3.5分共20题，判断题3分共10题"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/btn_start_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_normal"
+        android:text="开始考试"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

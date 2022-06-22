@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_practice">
+
+    <fragment
+        android:id="@+id/navigation_practice"
+        android:name="com.example.exambooktest.ui.practice.PracticeFragment"
+        android:label="@string/title_practice"
+        tools:layout="@layout/fragment_practice" />
+
+    <fragment
+        android:id="@+id/navigation_exam"
+        android:name="com.example.exambooktest.ui.exam.ExamFragment"
+        android:label="@string/title_exam"
+        tools:layout="@layout/fragment_friend" />
+
+    <fragment
+        android:id="@+id/navigation_friend"
+        android:name="com.example.exambooktest.ui.friend.FriendFragment"
+        android:label="@string/title_friend"
+        tools:layout="@layout/fragment_exam" />
+
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="com.example.exambooktest.ui.me.MeFragment"
+        android:label="@string/title_me"
+        tools:layout="@layout/fragment_me" />
+
+
+</navigation>
